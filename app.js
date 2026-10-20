@@ -43,7 +43,7 @@ function shell(inner) {
 
 /* ---------- Public scene: background slideshow (fades every 5 s) ---------- */
 const BG = {
-  urls: ['assets/gt3rs.jpg', 'assets/gtr.jpg'], every: 5000, i: 0, z: 1, timer: null, ready: false,
+  urls: ['assets/gt3rs.jpg', 'assets/gtr.jpg'], every: 7000, i: 0, z: 1, timer: null, ready: false,
   build() {
     const el = $('#bg');
     el.innerHTML = this.urls.map(u => `<div class="slide" style="background-image:url('${u}')"></div>`).join('') + '<div class="shade"></div><div class="dots">' + this.urls.map(() => '<i></i>').join('') + '</div>';
